@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Landing page</title>
+    <style>
+        html {
+            font-size: 15px;
+            background-color: #5a0707;
+            
+        }
+
+        body {
+    margin: 1;
+    padding: 1;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica, sans-serif;
+    line-height: 1.40;
+    
+}
+header {
+    color: White;
+    background-color: #5a0707;
+    text-align: center;
+}
+h1 {
+    font-family: "Trebuchet MS", sans-serif;
+  font-size: 4em;
+  letter-spacing: -2px;
+  border-bottom: 3px solid black;
+  text-transform: uppercase;
+  
+}
+h2 {
+  font-weight: 300;
+  font-size: 1.7rem;
+  margin: 0 0 16px 0;
+}
+.container {
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+    max-width: 800px;
+}
+.btn {
+    display: inline-block;
+    color: white;
+    font-weight: 500;
+    font-size: 1.25rem;
+    background: rgb(194,118,17);
+background: linear-gradient(90deg, rgba(194,118,17,1) 0%, rgba(90,7,7,1) 82%);
+    border: none;
+    border-radius: 5px;
+    padding: 12px 16px;
+    cursor: pointer;
+}
+.btn:hover {
+    background: #c27611;
+}
+section {
+    text-align: center;
+    padding: 40px 0;
+}
+.features {
+    background: #FFFFFF;
+    color: #000000;
+    border-bottom: 5px solid #5a0707;
+}
+.feature {
+    width: 30%;
+    display: inline-block;
+    font-size: 1rem;
+}
+.feature img {
+    width: 30%;
+}
+.quote {
+    background:#c27611;
+    color:#FFFFFF;
+}
+blockquote {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+blockquote p {
+    margin: 0 0 5px 0;
+    font-size: 2.5rem;
+}
+blockquote cite {
+    font-size: 1rem;
+    font-style: italic;
+}  
+blockquote cite:before {
+    content: '–';
+    margin-right: 2px;
+}
+footer {
+    background: #5a0707;
+    padding: 32px 0;
+    text-align: center;
+    color: white;
+    font-size: 5rem;
+    padding: 15px;
+}
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+footer li {
+    display: inline-block;
+}
+footer li a {
+    padding: 8px;
+    font-size: 0.875rem;
+    text-decoration: none;
+    color: white;
+}
+footer li a:hover {
+    color: grey;
+}
+
+
+.slideshow-container {
+  position: relative;
+  background: white;
+}
+
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #c27611;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #c27611;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #5a0707;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+q {font-style: italic;}
+
+.author {color: #5a0707;}
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>Comic Store</h1>
+        <h2>We have all your needs!</h2>
+        <a class="btn">Download Our New App</a>
+    </div>
+</header>
+
+<section class ="features">
+    <div class="container">
+        <div class="feature">
+            <img src="https://cdn-icons-png.flaticon.com/512/3079/3079132.png"/>
+            <p>Comic books</p>
+        </div>
+        <div class="feature">
+            <img src="https://cdn-icons-png.flaticon.com/512/7001/7001826.png"/>
+            <p>Other used books, used text books, and classics</p>
+        </div>
+        <div class="feature">
+            <img src="https://cdn-icons-png.flaticon.com/512/6967/6967649.png"/>
+            <p>Figurines</p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <div class="mySlides">
+      <q>They had plenty of copies of the newest comics for everyone</q>
+      <p class="author">- Martha</p>
+    </div>
+  
+    <div class="mySlides">
+      <q>They had the perfect reference book to help me with my computer problems</q>
+      <p class="author">- John</p>
+    </div>
+  
+    <div class="mySlides">
+      <q>My used action figure was in great condition and was shipped very carefully</q>
+      <p class="author">- Larry</p>
+    </div>
+  
+    <a class="prev" onclick="runSlides(-1)">&#10094;</a>
+    <a class="next" onclick="runSlides(1)">&#10095;</a>
+  </div>
+  
+  
+  <div class="dot-container">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+</section>
+
+<footer>
+    <div class="container">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <p style="font-size: 15px;">Icons by Flaticon</p>
+    </div>
+  </footer>
+
+  <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function runSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace( " active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>
